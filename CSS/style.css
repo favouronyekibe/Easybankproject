@@ -1,0 +1,248 @@
+*{
+    font-family: 'Public Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+p{
+    color: hsl(180, 1%, 23%);
+}
+html,body{
+    overflow-x: hidden;
+}
+
+#navs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 150px;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+}
+#navs a{
+    color: hsl(233, 8%, 62%);
+}
+#navs a:hover{
+    color: hsl(233, 26%, 24%);
+}
+.requestbtn:hover{
+    color: #fff;
+}
+.navlinks{
+    display: flex;
+    gap: 30px;
+}
+.requestbtn{
+    background-color: hsl(136, 65%, 51%);
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    width: 12%;
+    text-align: center;
+}
+
+#column{
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    /* margin-bottom: 100px; */
+}
+
+.firstcolumn{
+    width: 40%;
+    margin: 0 7rem;
+}
+
+.firstcolumn h1{
+    font-size: 5rem;
+    font-weight: 300;
+    color: hsl(233, 26%, 24%);
+    /* color: hsl(233, 8%, 62%); */
+}
+
+.firstcolumn p{
+    color: hsl(233, 8%, 62%);
+    font-size: 20px;
+    margin: 2rem 0;
+    width: 80%;
+}
+
+.firstcolumnRequestBtn a{
+    color: #fff;
+}
+
+.firstcolumnRequestBtn{
+    margin-top: 15px;
+    padding: 12px 6px;
+    border-radius: 20px;
+    width: 30%;
+    text-align: center;
+    background-color: hsl(136, 65%, 51%);
+}
+
+#column img{
+    width: 40%;
+    position: relative;
+    right: -100px;
+    top: -100px;
+    z-index: 1;
+}
+
+#whycolumn{
+    background-color: hsl(220, 16%, 96%);
+    /* margin-bottom: 100px; */
+    padding: 5rem 150px;
+}
+
+.whyeasybank{
+    margin-bottom: 50px;
+    /* margin-left: 150px; */
+    width: 50%;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.whyeasybank h1{
+    margin-bottom: 30px;
+    font-size: 3rem;
+    font-weight: 300;
+    color: hsl(233, 26%, 24%);
+}
+.whyeasybank p{
+    color: hsl(233, 8%, 62%);
+}
+
+.whyeasybanktwo{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.whyeasybanktwo h3{
+    margin: 30px 0px;
+    font-size: 30px;
+    font-weight: 400;
+}
+.whyeasybanktwo p{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.secondwhyeasybank img{
+    width: 25%;
+}
+/* before footer */
+#beforefooter{
+    padding: 150px;
+    background-color: hsl(0, 0%, 98%);
+}
+#beforefooter h4{
+    margin-bottom: 30px;
+    font-size: 50px;
+    width: 80%;
+}
+#beforefooter img{
+    width: 100%;
+}
+
+.imgtext{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.text{
+    background-color: #fff;
+    padding: 10px 15px;
+    width: 100%;
+    /* height: 150px; */
+    box-shadow: 1px 1px 1px rgb(226, 226, 226);
+}
+
+#beforefooter .fourimgtext{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+}
+.text .name{
+    padding: 20px 0;
+    font-size: 15px;
+}
+.text p{
+    padding-top: 20px;
+    font-size: 19px;
+}
+
+.cardLink{
+    font-size: 25px;
+    font-weight: 10px;
+    color: hsl(180, 4%, 10%);
+}
+.cardLink:hover{
+    color: hsl(136, 65%, 51%);
+}
+/* end before footer */
+
+/* footer */
+#footer{
+    background-color: hsl(233, 26%, 24%);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footera{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.footerb{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footerc{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footerd{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footerdbtn{
+    background-color: hsl(136, 65%, 51%);
+    text-align: center;
+    padding: 8px;
+    color: #fff;
+    width: 60%;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 20px;
+    margin-left: 100px;
+}
+.footerdd{
+    color: #fff;
+    font-weight: 400;
+}
+#footer a{
+    color: #fff;
+}
+#footer a:hover{
+    color: hsl(136, 65%, 51%);
+}
+.icons{
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
+/* end footer */
