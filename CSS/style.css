@@ -23,22 +23,24 @@ html,body{
     z-index: 2;
     background-color: #fff;
 }
-#navs a{
-    color: hsl(233, 8%, 62%);
-}
-#navs a:hover{
-    color: hsl(233, 26%, 24%);
-}
-.requestbtn:hover{
-    color: #fff;
-}
+    
 .navlinks{
     display: flex;
     gap: 30px;
+    /* color: hsl(220, 16%, 96%); */
+}
+.navlinks a{
+    color: hsl(233, 8%, 62%);
+}
+.navlinks a:hover{
+    color: hsl(233, 26%, 24%);
+}
+.requestbtn a{
+    color: #fff;
 }
 .requestbtn{
     background-color: hsl(136, 65%, 51%);
-    color: #fff;
+    /* color: #fff; */
     padding: 10px;
     border-radius: 20px;
     width: 12%;
@@ -107,6 +109,7 @@ html,body{
     font-size: 1.5rem;
     font-weight: 300;
 }
+
 .whyeasybank h1{
     margin-bottom: 30px;
     font-size: 3rem;
@@ -118,9 +121,8 @@ html,body{
 }
 
 .whyeasybanktwo{
-    display: flex;
-    align-content: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 }
 
@@ -154,7 +156,7 @@ html,body{
 .imgtext{
     display: flex;
     flex-direction: column;
-    width: 40%;
+    /* width: 40%; */
 }
 .text{
     background-color: #fff;
@@ -165,11 +167,11 @@ html,body{
 }
 
 #beforefooter .fourimgtext{
-    display: flex;
-    align-content: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
+
 .text .name{
     padding: 20px 0;
     font-size: 15px;
@@ -230,19 +232,173 @@ html,body{
     border-radius: 20px;
     margin-left: 100px;
 }
+
 .footerdd{
     color: #fff;
     font-weight: 400;
 }
+
 #footer a{
     color: #fff;
 }
-#footer a:hover{
-    color: hsl(136, 65%, 51%);
+
+.icons i:hover, .footerb a:hover, .footerc a:hover{
+    color: hsl(136, 65%, 51%) !important;
 }
+
 .icons{
     display: flex;
     gap: 10px;
     font-size: 20px;
 }
 /* end footer */
+
+/* Media Query */
+/* #column{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+@media screen and (max-width:400px){
+    #column h1{
+     font-size: 50px;
+     margin-left: 90px;
+     padding: 50px;
+}
+}
+#column p{
+    width: 10%;
+    /* font-size: 50px; */
+
+/* End Of Media Query */
+
+@media screen and (max-width:1200px){
+    #whycolumn{
+        padding: 2rem 80px;
+    }
+
+    #beforefooter{
+        padding: 2rem 40px;
+    }
+}
+
+@media screen and (max-width:992px){
+    #whycolumn{
+        padding: 2rem 50px;
+    }
+
+    #beforefooter{
+        padding: 2rem 30px;
+    }
+
+    .whyeasybanktwo,#beforefooter .fourimgtext{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .whyeasybank{
+        width: 70%;
+    }
+
+    #column h1{
+        font-size: 40px;
+    }
+
+    .firstcolumn p{
+        font-size: 20px;
+    }
+
+    .firstcolumn {
+        margin: 0;
+    }
+
+    #column img {
+        right: -30px;
+    }
+    .firstcolumnRequestBtn{
+        width: 120px;}
+    #footer{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 30px;
+    }
+    .icons{
+        justify-content: center;
+    }
+
+    .footerdbtn{
+        width: 35%;
+        margin: 10px auto;
+    }
+}
+
+
+@media screen and (max-width:576px){
+    .whyeasybanktwo, #beforefooter .fourimgtext{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #column{
+        flex-direction: column-reverse;
+    }
+
+    #column img{
+        top: 0;
+    }
+
+    .firstcolumn{
+        text-align: center;
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .firstcolumn p, .firstcolumnRequestBtn{
+        margin: 1rem auto;
+    }
+    .firstcolumnRequestBtn{
+        width: 120px;
+    }
+    
+    .whyeasybank h1{
+        font-size: 40px;
+    }
+
+
+    #beforefooter h4{
+        width: 400px;
+        font-size: 30px;
+    }
+    #column img{
+        width: 300px;
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width:375px){
+    #whycolumn, #beforefooter .fourimgtext{
+        text-align: center;
+    }
+    #column h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    #column p{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .footerdbtn{
+        width: 50%;
+    }
+
+    .whyeasybank{
+        width: 90%;
+        margin:2rem auto;
+        text-align: center;
+
+    }
+    #column img{
+        width: 300px;
+        margin-right: 30px;
+    }
+}
